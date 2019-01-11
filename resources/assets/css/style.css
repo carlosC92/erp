@@ -1,0 +1,83 @@
+
+.container-fluid{
+    background: #333333;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+form{
+    text-align: center;
+}
+.loginBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.loginBox label{
+    display: block;
+
+}
+
+.inputLogin{
+    border: 0;
+    background: transparent;
+    border-bottom: 3px solid #4A4A4A;
+    font-size: 36px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 5px 20px;
+    width: 500px;
+    transition: all 0.3s;
+    outline: 0;
+}
+
+.inputLogin:focus {
+    width: 600px;
+    max-width: 100%;
+}
+
+.inputLogin:focus + .label-text{
+    color: #F0F0F0;
+    font-size: 13px;
+    transform: translateY(-74px);
+}
+
+.inputLogin:valid + .label-text{
+    font-size: 13px;
+    transform:translateY(-74px);
+}
+
+
+.label-text{
+    text-transform: uppercase;
+    color: #9B9B9B;
+    transform: translateY(-36px);
+    cursor: text;
+    transition: all 0.3s
+}
+
+button{
+    border: 3px solid white;
+    border-radius: 50px;
+    background: #333333;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 15px 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    transition: all 200ms;
+}
+
+button:hover{
+    background: white;
+    color: #333333;
+    outline: 0;
+}
+
+button:focus{
+    outline: 0;
+}
